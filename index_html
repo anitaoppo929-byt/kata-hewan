@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tebak Hewan</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="gameScreen">
+    <h2>Level: <span id="levelNumber">1</span></h2>
+
+    <div class="imgBox">
+        <img id="animalImg" class="animal" src="" alt="hewan">
+        <div id="emojiEffect">🎉</div>
+    </div>
+
+    <div class="stats">
+        ❤️ Nyawa: <span id="lives">3</span> |
+        🪙 Koin: <span id="coins">10</span> |
+        💎 Diamond: <span id="diamonds">3</span>
+    </div>
+
+    <input type="text" id="answerInput" placeholder="Jawaban...">
+    <button id="checkBtn">Cek</button>
+
+    <div class="shop">
+        <button id="clueCoinBtn">💡 Clue (2 koin)</button>
+        <button id="clueDiamondBtn">🔍 Reveal (1 diamond)</button>
+    </div>
+
+    <p id="clueBox"></p>
+    <p id="resultText"></p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
